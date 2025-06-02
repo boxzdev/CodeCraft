@@ -1,0 +1,84 @@
+Build a full-featured web-based IDE identical to Replit and VS Code with these exact specifications:
+
+Core Architecture & Layout
+Title Bar: Exact VS Code replica with menu (File, Edit, View, Go, Run, Terminal, Help), window controls (minimize, maximize, close)
+Activity Bar: Left vertical bar (48px wide) with icons for Explorer, Search, Source Control, Run & Debug, Extensions
+Primary Sidebar: File explorer with tree view, collapsible folders, file icons by type, context menus
+Editor Group: Tabbed interface supporting multiple files, split view, breadcrumb navigation
+Panel: Bottom section with integrated terminal, problems, output, debug console
+Status Bar: Bottom status with file info, cursor position, language mode, Git branch
+Authentic Visual Design
+Color Scheme: VS Code Dark+ theme
+Background: #1e1e1e, Sidebar: #252526, Tabs: #2d2d30
+Borders: #3e3e42, Text: #cccccc, Accent: #007acc
+Typography: Use 'Segoe UI' for interface, 'Consolas'/'Monaco' for code
+Icons: Use VS Code icon set or Codicons font
+Hover States: Subtle highlights (#2a2d2e), active selections (#37373d)
+File Management System
+File Tree: Hierarchical display with expand/collapse, drag-and-drop reordering
+File Operations: Create, rename, delete, duplicate files/folders via context menu
+File Types: Support 25+ languages (JS, TS, Python, Java, C++, HTML, CSS, JSON, etc.)
+File Icons: Language-specific icons (React, Vue, Python, etc.)
+Search: Global file search with regex support
+Monaco Editor Integration
+Full Monaco Setup: Load from CDN with worker support for IntelliSense
+Language Features: Syntax highlighting, auto-completion, error detection, code folding
+Editor Settings: Font size control, word wrap, minimap toggle, line numbers
+Keyboard Shortcuts: VS Code keybindings (Ctrl+S save, Ctrl+P quick open, etc.)
+Multi-cursor: Support for multiple selections and editing
+AI Coding Assistant (OpenRouter Integration)
+Free Models Only:
+mistralai/mistral-7b-instruct:free
+microsoft/phi-3-medium-4k-instruct:free
+google/gemma-2-9b-it:free
+meta-llama/llama-3.1-8b-instruct:free
+Smart Context: Send current file, project structure, selected code to AI
+File Actions: AI can create/edit/delete files via structured JSON responses
+Code Generation: Generate components, functions, tests, documentation
+Inline Suggestions: Real-time code completions and improvements
+Code Execution Engine
+JavaScript: Client-side execution with console output capture
+Python: Server-side execution using subprocess with timeout protection
+HTML/CSS: Live preview in iframe or new window
+Terminal Simulation: Basic shell commands for file operations
+Error Handling: Capture and display runtime errors with stack traces
+Project Templates & Quickstart
+React TypeScript: Full setup with Vite, ESLint, Tailwind
+Node.js Express: API server with middleware and routes
+Python Flask: Web application with templates and static files
+Vue 3 Composition: Modern Vue setup with TypeScript
+Static Website: HTML/CSS/JS with build tools
+Advanced Features
+Split Editor: Side-by-side file editing with sync scrolling
+Command Palette: Ctrl+Shift+P for all available commands
+Quick Open: Ctrl+P for fast file navigation
+Integrated Terminal: Full terminal emulator with command history
+Git Integration: Basic version control (add, commit, status)
+Extensions API: Plugin system for custom functionality
+Performance Optimizations
+Virtual Scrolling: Handle large files without lag
+Lazy Loading: Load file contents on demand
+Web Workers: Run heavy operations in background threads
+Code Splitting: Minimize initial bundle size
+Caching: Store frequently accessed files in memory
+Technical Stack Requirements
+Frontend: React 18+ with TypeScript, Vite for building
+Styling: Tailwind CSS with VS Code color variables
+Monaco: Load via AMD/UMD with language workers
+Backend: Express.js with TypeScript for AI and execution
+Storage: localStorage for projects, IndexedDB for large files
+State: Zustand or React Context for global state
+Critical Success Metrics
+Visual Fidelity: 95% identical to VS Code interface
+Performance: Sub-100ms file switching, smooth scrolling
+AI Reliability: Consistent responses with free tier models
+Code Execution: Error-free JavaScript/Python running
+File Management: Zero data loss, reliable operations
+Implementation Priority
+Core layout and navigation (Activity bar, sidebar, editor)
+File system with basic operations
+Monaco editor with syntax highlighting
+AI integration with free models
+Code execution for JavaScript/Python
+Polish and advanced features
+Start with a working foundation and build incrementally. Focus on authenticity over features - make it feel like the real VS Code/Replit experience.
